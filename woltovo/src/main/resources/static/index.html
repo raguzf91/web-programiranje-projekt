@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="index.js"></script>
+
+    <title>Wolto &mdash; Jedi fino bez kuhanja!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <h2 class="logo">WOLTOVO</h2>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Kako radi</a></li>
+          <li><a class="main-nav-link" href="#meals">Obroci</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Recenzije</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="login.html">Prijavi se</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Zdrav obrok dostavljen na vaša vrata, svaki dan.
+            </h1>
+            <p class="hero-description">
+              Pametna pretplata na hranu 365 dana u godini koja će vas ponovno potaknuti na zdravu prehranu. Prilagođena vašim osobnim ukusima i prehrambenim potrebama.
+            </p>
+            <a href="register.html" class="btn btn--full margin-right-sm"
+              >Probaj za besplatno</a
+            >
+
+            <a href="#how" class="btn btn--outline">Više o nama </a>
+          </div>
+          <div class="hero-img-box">
+              <img
+                src="img/healthy_eating.jpg"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+              <img
+                src="img/healthy_eating2.jpg"
+                class="hero-img-2"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+              <img
+              src="img/healthy_eating3.png"
+              class="hero-img-2"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
+
+
+            
+          </div>
+        </div>
+      </section>
+
+     
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">Kako radi</span>
+          <h2 class="heading-secondary">
+            Hrani se zdravo bez ikakvog truda u tri jednostavna koraka 
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">
+              Kreiraj račun i reci nam koji ti se recepti sviđaju
+            </h3>
+           
+          </div>
+
+         
+
+          <!-- STEP 02 -->
+          
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Oblikuj recepte prema svojim željama</h3>
+           
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Potvrdi vrijeme i dan narudžbe</h3>
+           
+          </div>
+          
+          <!-- STEP 04 -->
+       
+          <div class="step-text-box">
+            <p class="step-number">04</p>
+            <h3 class="heading-tertiary">Uživaj u svojoj zdravoj hrani</h3>
+           
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">Obroci</span>
+          <h2 class="heading-secondary">
+            Pogledaj primjere obroka koji te čekaju
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.png"
+              class="meal-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Vegeterijansko</span>
+              </div>
+              <p class="meal-title">Curry od leće i batata</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>450</strong> kalorija</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.9</strong> ocjena (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.png"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--paleo">Paleo</span>
+              </div>
+              <p class="meal-title">Pureća prsa</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>400</strong> kalorija</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.8</strong> ocjena (441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diets">
+            <h3 class="heading-tertiary">Prilagođeno vašoj dijeti</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Vegeterijanska jela</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Jela bez laktoze</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Jela bez glutena</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Zdrava jela</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>KETO jela</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Paleo jela</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Proteinska jela</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container all-recipes">
+          <a href="#" class="link">Pogledaj sve recepte &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Što su naši kupci rekli na to:</span>
+          <h2 class="heading-secondary">Kad jednom probate, nema povratka</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Dave Bryson"
+                src="img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Povoljni, zdravi i ukusni obroci, bez potrebe za ručnim naručivanjem! Zaista djeluje čarobno.
+              </blockquote>
+              <p class="testimonial-name">&mdash; {Korisnik 1}</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Nevjerojatno dobra stranica,ne trebam više brinuti o hrani!
+              </blockquote>
+              <p class="testimonial-name">&mdash; {Korisnik 2}</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Woltovo me spasio! Upravo sam pokrenuo tvrtku, pa nemam vremena za kuhanje. Ne bih mogao živjeti bez svojih dnevnih obroka!
+              </blockquote>
+              <p class="testimonial-name">&mdash; {Korisnik 3}</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+               Sve je organsko i vegansko bez mikroplastike
+              </blockquote>
+              <p class="testimonial-name">&mdash; {Korisnik 4}</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+            <!-- <figcaption>Caption</figcaption> -->
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-5.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <form class="cta-form" id="registerForm" name="sign-up" >
+                <div>
+                  <label for="ime">Ime</label>
+                  <input
+                    id="ime"
+                    type="text"
+                    placeholder="Filip"
+                    name="first-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="prezime">Prezime</label>
+                  <input
+                    id="prezime"
+                    type="text"
+                    placeholder="Raguž"
+                    name="last-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                    <label for="lozinka">Lozinka</label>
+                    <input
+                      id="lozinka"
+                      type="password"
+                      placeholder="lozinka"
+                      name="lozinka"
+                      required
+                    />
+                  </div>
+  
+
+                <div>
+                  <label for="preferenca">Koju vrstu hrane voliš?</label>
+                  <select id="preferenca" name="select-where" required>
+                    <option value="">Molimo Vas izaberite jedno polje:</option>
+                    <option value="vegeterijanska">Vegeterijansku</option>
+                    <option value="egzoticna">Egzotičnu</option>
+                    <option value="proteinska">Bogatu proteinima</option>
+                    <option value="malo_ugljiko">Sa malo ugljikohidrata</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="kratica">Vi ste?</label>
+                  <select id="kratica" name="select-where" required>
+                    <option value="">Molimo Vas izaberite jedno polje:</option>
+                    <option value="GOSP">Gosp.</option>
+                    <option value="GĐA">Gđa.</option>
+                  </select>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    <label for="terms">Prihvaćam uvjete korištenja</label>
+                  </div>
+
+                <button type="submit" class="btn btn--form">Registriraj se</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+              <p class="already-registered">
+                Već ste registrirani? <a href="korisnik/prijava">Prijavite se</a>
+              </p>
+              <div id="error-message" class="error-message hidden"></div>
+              <div id="success-message" class="success-message hidden"></div>
+            </div>
+            <div
+              class="login-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+              src = img/healthy_eating.jpg
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+  </body>
+</html>

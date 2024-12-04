@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijava</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Prijavi se u Woltovo</h1>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      
+      <label for="lozinka">Lozinka</label>
+      <input type="password" id="lozinka" name="password" placeholder="Lozinka" required>
+      
+      <div class="stay-forgot-box">
+        <div class="stay-signed-in">
+          <input type="checkbox" id="staySignedIn" name="staySignedIn">
+          <label for="staySignedIn">Ostanite prijavljeni</label>
+        </div>
+        <div class="forgot-password">
+          <a class="link" href="forgot-password.html">Zaboravili ste lozinku?</a>
+        </div>
+      </div>
+      
+      <button type="submit" id="signInButton">Prijavite se</button>
+    </form>
+    
+    <div class="sign-up">
+      <p>ili</p>
+      <span>Nemate račun? </span><a class="link" href="/korisnik/registracija">Registrirajte se</a>
+    </div>
+    
+    <footer>
+      <div id="error-message" class="error-message hidden"></div>
+    </footer>
+  </div>
+  
+  <script src="login.js"></script>
+</body>
+</html>

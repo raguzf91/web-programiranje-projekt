@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registracija</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="register-container">
+    <h1 class="register-title">Registracija</h1>
+    <form id="registerForm" class="register-form">
+      <label for="ime" class="form-label">Ime</label>
+      <input type="text" id="ime" name="ime" class="form-input" placeholder="Vaše ime" required>
+
+      <label for="prezime" class="form-label">Prezime</label>
+      <input type="text" id="prezime" name="prezime" class="form-input" placeholder="Vaše prezime" required>
+
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" name="email" class="form-input" placeholder="Vaš email" required>
+      
+      <label for="lozinka" class="form-label">Lozinka</label>
+      <input type="password" id="lozinka" name="lozinka" class="form-input" placeholder="Vaša lozinka" required>
+
+      <div class="form-select-container">
+        <label for="preferenca" class="form-label">Koju vrstu hrane voliš?</label>
+        <select id="preferenca" name="preferenca" class="form-select" required>
+          <option value="">Molimo Vas izaberite jedno polje:</option>
+          <option value="vegeterijanska">Vegeterijansku</option>
+          <option value="egzoticna">Egzotičnu</option>
+          <option value="proteinska">Bogatu proteinima</option>
+          <option value="malo_ugljiko">Sa malo ugljikohidrata</option>
+        </select>
+      </div>
+
+      <div class="form-select-container">
+        <label for="kratica" class="form-label">Vi ste?</label>
+        <select id="kratica" name="preferenca" class="form-select" required>
+          <option value="">Molimo Vas izaberite jedno polje:</option>
+          <option value="GOSP">Gosp.</option>
+          <option value="GĐA">Gđa.</option>
+        </select>
+      </div>
+      
+      <button type="submit" id="registerButton" class="form-button">Registrirajte se</button>
+    </form>
+    
+    <div class="sign-in-link">
+      <p>Već ste registrirani? <a class="link" href="korisnik/prijava">Prijavite se</a></p>
+    </div>
+  </div>
+  <footer>
+    <div id="error-message" class="error-message hidden"></div>
+  </footer>
+  <script src="register.js"></script>
+</body>
+</html>
